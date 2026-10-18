@@ -1,0 +1,269 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [6 0 R 8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 6397 >>
+stream
+1 1 1 rg 0 0 1191 842 re f
+BT /F2 23 Tf 0.1 0.16 0.23 rg 1 0 0 1 42 800 Tm (Data Flow Diagram - System Context) Tj ET
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 42 779 Tm (Level 0 DFD | Main trust boundaries, external services, persisted data and generated artifacts) Tj ET
+0.82 0.86 0.9 RG 1 w [] 0 d 42 762 m 1149 762 l S [] 0 d
+BT /F1 9 Tf 0.34 0.4 0.48 rg 1 0 0 1 42 22 Tm (MCQ Video Studio | Data Flow Diagram | Derived from current repository implementation) Tj ET
+BT /F1 9 Tf 0.34 0.4 0.48 rg 1 0 0 1 1127 22 Tm (1) Tj ET
+1 0.96 0.84 rg 0.62 0.43 0.08 RG 1.5 w
+62 505 m 62 532.61 100.06 555 147 555 c 193.94 555 232 532.61 232 505 c 232 477.39 193.94 455 147 455 c 100.06 455 62 477.39 62 505 c B
+BT /F2 14 Tf 0.62 0.43 0.08 rg 1 0 0 1 69.86 512 Tm (P1  MCQ Studio user) Tj ET
+BT /F1 10 Tf 0.1 0.16 0.23 rg 1 0 0 1 75.45 491 Tm (Creator / signed-in account) Tj ET
+0.89 0.94 0.99 rg 0.17 0.39 0.62 RG 1.5 w
+340 424 m 524 424 l 530.63 424 536 429.37 536 436 c 536 570 l 536 576.63 530.63 582 524 582 c 340 582 l 333.37 582 328 576.63 328 570 c 328 436 l 328 429.37 333.37 424 340 424 c B
+BT /F2 14 Tf 0.17 0.39 0.62 rg 1 0 0 1 375.16 557 Tm (P2  Web client) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 405.76 536 Tm (React SPA) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 385.36 519 Tm (Questions / sets) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 373.7 502 Tm (PPT, video, voice UI) Tj ET
+0.89 0.96 0.91 rg 0.18 0.48 0.3 RG 1.5 w
+649 424 m 860 424 l 866.63 424 872 429.37 872 436 c 872 570 l 872 576.63 866.63 582 860 582 c 649 582 l 642.37 582 637 576.63 637 570 c 637 436 l 637 429.37 642.37 424 649 424 c B
+BT /F2 14 Tf 0.18 0.48 0.3 rg 1 0 0 1 705.78 557 Tm (P3  Main API) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 702.03 536 Tm (Express + JWT auth) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 684.54 519 Tm (CRUD + job orchestration) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 687.46 502 Tm (PPT / narration / video) Tj ET
+0.96 0.97 0.98 rg 0.43 0.29 0.57 RG 1.5 w
+982 574 m 1137 574 l 1141.42 574 1145 577.58 1145 582 c 1145 658 l 1145 662.42 1141.42 666 1137 666 c 982 666 l 977.58 666 974 662.42 974 658 c 974 582 l 974 577.58 977.58 574 982 574 c B
+BT /F2 12 Tf 0.43 0.29 0.57 rg 1 0 0 1 992.88 637 Tm (D1  Core JSON store) Tj ET
+BT /F1 10 Tf 0.1 0.16 0.23 rg 1 0 0 1 1000.7 616 Tm (users, questions, sets) Tj ET
+BT /F1 10 Tf 0.1 0.16 0.23 rg 1 0 0 1 1003.35 599 Tm (presentations, videos) Tj ET
+0.96 0.97 0.98 rg 0.43 0.29 0.57 RG 1.5 w
+982 430 m 1137 430 l 1141.42 430 1145 433.58 1145 438 c 1145 526 l 1145 530.42 1141.42 534 1137 534 c 982 534 l 977.58 534 974 530.42 974 526 c 974 438 l 974 433.58 977.58 430 982 430 c B
+BT /F2 12 Tf 0.43 0.29 0.57 rg 1 0 0 1 989.4 505 Tm (D2  Local file store) Tj ET
+BT /F1 10 Tf 0.1 0.16 0.23 rg 1 0 0 1 1006 484 Tm (PPTX, MP4, SRT, JSON) Tj ET
+BT /F1 10 Tf 0.1 0.16 0.23 rg 1 0 0 1 998.05 467 Tm (voice WAV + temp assets) Tj ET
+1 0.96 0.84 rg 0.62 0.43 0.08 RG 1.5 w
+658 220 m 658 248.17 702.32 271 757 271 c 811.68 271 856 248.17 856 220 c 856 191.83 811.68 169 757 169 c 702.32 169 658 191.83 658 220 c B
+BT /F2 13 Tf 0.62 0.43 0.08 rg 1 0 0 1 681.6 228 Tm (E1  Edge TTS service) Tj ET
+BT /F1 10 Tf 0.1 0.16 0.23 rg 1 0 0 1 696.05 207 Tm (Online neural narration) Tj ET
+0.95 0.91 0.98 rg 0.43 0.29 0.57 RG 1.5 w
+916 166 m 1106 166 l 1112.63 166 1118 171.37 1118 178 c 1118 267 l 1118 273.63 1112.63 279 1106 279 c 916 279 l 909.37 279 904 273.63 904 267 c 904 178 l 904 171.37 909.37 166 916 166 c B
+BT /F2 14 Tf 0.43 0.29 0.57 rg 1 0 0 1 941.98 254 Tm (P4  Voice service) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 955.62 233 Tm (FastAPI on loopback) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 952.7 216 Tm (XTTS v2, lazy-loaded) Tj ET
+1 0.96 0.84 rg 0.62 0.43 0.08 RG 1.5 w
+366 220 m 366 248.17 405.62 271 454.5 271 c 503.38 271 543 248.17 543 220 c 543 191.83 503.38 169 454.5 169 c 405.62 169 366 191.83 366 220 c B
+BT /F2 13 Tf 0.62 0.43 0.08 rg 1 0 0 1 416.3 228 Tm (E2  FFmpeg) Tj ET
+BT /F1 10 Tf 0.1 0.16 0.23 rg 1 0 0 1 390.4 207 Tm (Local render / audio mux) Tj ET
+0.17 0.39 0.62 RG 1.8 w [] 0 d 232 509 m 328 509 l S [] 0 d
+0.17 0.39 0.62 rg 328 509 m 320.21 513.5 l 320.21 504.5 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 245 523 Tm (UI actions / MCQ data) Tj ET
+0.18 0.48 0.3 RG 1.8 w [] 0 d 328 472 m 232 472 l S [] 0 d
+0.18 0.48 0.3 rg 232 472 m 239.79 467.5 l 239.79 476.5 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 244 453 Tm (results / assets) Tj ET
+0.17 0.39 0.62 RG 1.8 w [] 0 d 536 509 m 637 509 l S [] 0 d
+0.17 0.39 0.62 rg 637 509 m 629.21 513.5 l 629.21 504.5 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 547 523 Tm (HTTP + Bearer JWT) Tj ET
+0.18 0.48 0.3 RG 1.8 w [] 0 d 637 472 m 536 472 l S [] 0 d
+0.18 0.48 0.3 rg 536 472 m 543.79 467.5 l 543.79 476.5 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 548 453 Tm (JSON / job status) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 872 542 m 974 620 l S [] 0 d
+0.43 0.29 0.57 rg 974 620 m 965.08 618.84 l 970.54 611.69 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 887 583 Tm (read/write records) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 872 473 m 974 482 l S [] 0 d
+0.43 0.29 0.57 rg 974 482 m 965.84 485.8 l 966.63 476.83 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 885 491 Tm (assets + temp files) Tj ET
+0.62 0.43 0.08 RG 1.8 w [] 0 d 729 424 m 751 271 l S [] 0 d
+0.62 0.43 0.08 rg 751 271 m 754.34 279.36 l 745.44 278.07 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 667 344 Tm (text -> speech \(default\)) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 837 424 m 960 279 l S [] 0 d
+0.43 0.29 0.57 rg 960 279 m 958.39 287.85 l 951.53 282.03 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 842 362 Tm (custom voice HTTP / WAV) Tj ET
+0.62 0.43 0.08 RG 1.8 w [] 0 d 637 432 m 543 267 l S [] 0 d
+0.62 0.43 0.08 rg 543 267 m 550.77 271.54 l 542.95 276 l h f
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 535 349 Tm (render command / media) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 63 106 Tm (Boundary notes:) Tj ET
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 63 86 Tm (- The API scopes records and jobs to the authenticated user ID; JSON and assets are local to the server host.) Tj ET
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 63 68 Tm (- Custom voice profiles are stored locally; the Python service reads the shared profile catalog and WAV files.) Tj ET
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 63 50 Tm (- Edge TTS requires internet. FFmpeg and the optional XTTS service run beside the API in the local MVP.) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1191 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 11757 >>
+stream
+1 1 1 rg 0 0 1191 842 re f
+BT /F2 23 Tf 0.1 0.16 0.23 rg 1 0 0 1 42 800 Tm (Data Flow Diagram - Internal Processes) Tj ET
+BT /F1 10 Tf 0.34 0.4 0.48 rg 1 0 0 1 42 779 Tm (Level 1 DFD | Account data, presentation generation, asynchronous video job and custom voice synthesis) Tj ET
+0.82 0.86 0.9 RG 1 w [] 0 d 42 762 m 1149 762 l S [] 0 d
+BT /F1 9 Tf 0.34 0.4 0.48 rg 1 0 0 1 42 22 Tm (MCQ Video Studio | Data Flow Diagram | Derived from current repository implementation) Tj ET
+BT /F1 9 Tf 0.34 0.4 0.48 rg 1 0 0 1 1127 22 Tm (2) Tj ET
+1 0.96 0.84 rg 0.62 0.43 0.08 RG 1.5 w
+47 640 m 47 659.88 76.55 676 113 676 c 149.45 676 179 659.88 179 640 c 179 620.12 149.45 604 113 604 c 76.55 604 47 620.12 47 640 c B
+BT /F2 13 Tf 0.62 0.43 0.08 rg 1 0 0 1 86.61 646 Tm (Creator) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 70.07 628 Tm (authenticated user) Tj ET
+0.89 0.96 0.91 rg 0.18 0.48 0.3 RG 1.5 w
+233 581 m 378 581 l 384.63 581 390 586.37 390 593 c 390 682 l 390 688.63 384.63 694 378 694 c 233 694 l 226.37 694 221 688.63 221 682 c 221 593 l 221 586.37 226.37 581 233 581 c B
+BT /F2 14 Tf 0.18 0.48 0.3 rg 1 0 0 1 248.66 669 Tm (P1  Auth + API) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 264.69 648 Tm (JWT validation) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 255.94 631 Tm (account ownership) Tj ET
+0.89 0.94 0.99 rg 0.17 0.39 0.62 RG 1.5 w
+451 581 m 603 581 l 609.63 581 615 586.37 615 593 c 615 682 l 615 688.63 609.63 694 603 694 c 451 694 l 444.37 694 439 688.63 439 682 c 439 593 l 439 586.37 444.37 581 451 581 c B
+BT /F2 14 Tf 0.17 0.39 0.62 rg 1 0 0 1 474.22 669 Tm (P2  MCQ / set) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 483.27 648 Tm (create / import) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 471.62 631 Tm (select question IDs) Tj ET
+0.96 0.97 0.98 rg 0.43 0.29 0.57 RG 1.5 w
+695 594 m 880 594 l 884.42 594 888 597.58 888 602 c 888 675 l 888 679.42 884.42 683 880 683 c 695 683 l 690.58 683 687 679.42 687 675 c 687 602 l 687 597.58 690.58 594 695 594 c B
+BT /F2 13 Tf 0.43 0.29 0.57 rg 1 0 0 1 737.99 651 Tm (D1  data.json) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 729.76 631 Tm (users | questions | sets) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 734.53 614 Tm (presentations | videos) Tj ET
+0.17 0.39 0.62 RG 1.8 w [] 0 d 179 640 m 221 640 l S [] 0 d
+0.17 0.39 0.62 rg 221 640 m 213.21 644.5 l 213.21 635.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 181 655 Tm (credentials / requests) Tj ET
+0.17 0.39 0.62 RG 1.8 w [] 0 d 390 640 m 439 640 l S [] 0 d
+0.17 0.39 0.62 rg 439 640 m 431.21 644.5 l 431.21 635.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 390 655 Tm (authorized input) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 615 642 m 687 642 l S [] 0 d
+0.43 0.29 0.57 rg 687 642 m 679.21 646.5 l 679.21 637.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 617 657 Tm (read / write records) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 687 615 m 615 615 l S [] 0 d
+0.43 0.29 0.57 rg 615 615 m 622.79 610.5 l 622.79 619.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 619 598 Tm (owned questions) Tj ET
+0.89 0.94 0.99 rg 0.17 0.39 0.62 RG 1.5 w
+59 362 m 189 362 l 195.63 362 201 367.37 201 374 c 201 474 l 201 480.63 195.63 486 189 486 c 59 486 l 52.37 486 47 480.63 47 474 c 47 374 l 47 367.37 52.37 362 59 362 c B
+BT /F2 14 Tf 0.17 0.39 0.62 rg 1 0 0 1 42.8 461 Tm (P3  Generate request) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 89.02 440 Tm (title + MCQs) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 68.61 423 Tm (duration / language) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 83.19 406 Tm (selected voice) Tj ET
+0.89 0.96 0.91 rg 0.18 0.48 0.3 RG 1.5 w
+269 362 m 424 362 l 430.63 362 436 367.37 436 374 c 436 474 l 436 480.63 430.63 486 424 486 c 269 486 l 262.37 486 257 480.63 257 474 c 257 374 l 257 367.37 262.37 362 269 362 c B
+BT /F2 14 Tf 0.18 0.48 0.3 rg 1 0 0 1 289.66 461 Tm (P4  Create job) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 299.86 440 Tm (validate request) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 288.2 423 Tm (jobId + queued state) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 305.69 406 Tm (in-process Map) Tj ET
+0.89 0.94 0.99 rg 0.17 0.39 0.62 RG 1.5 w
+504 362 m 664 362 l 670.63 362 676 367.37 676 374 c 676 474 l 676 480.63 670.63 486 664 486 c 504 486 l 497.37 486 492 480.63 492 474 c 492 374 l 492 367.37 497.37 362 504 362 c B
+BT /F2 14 Tf 0.17 0.39 0.62 rg 1 0 0 1 510.92 461 Tm (P5  Script builder) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 543.19 440 Tm (normalize MCQs) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 528.62 423 Tm (question / solution) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 531.53 406 Tm (segments + timings) Tj ET
+1 0.96 0.84 rg 0.62 0.43 0.08 RG 1.5 w
+751 362 m 909 362 l 915.63 362 921 367.37 921 374 c 921 474 l 921 480.63 915.63 486 909 486 c 751 486 l 744.37 486 739 480.63 739 474 c 739 374 l 739 367.37 744.37 362 751 362 c B
+BT /F2 14 Tf 0.62 0.43 0.08 rg 1 0 0 1 748.8 461 Tm (P6  Speech synthesis) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 780.45 440 Tm (Edge / system TTS) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 789.19 423 Tm (or custom XTTS) Tj ET
+0.89 0.96 0.91 rg 0.18 0.48 0.3 RG 1.5 w
+985 362 m 1135 362 l 1141.63 362 1147 367.37 1147 374 c 1147 474 l 1147 480.63 1141.63 486 1135 486 c 985 486 l 978.37 486 973 480.63 973 474 c 973 374 l 973 367.37 978.37 362 985 362 c B
+BT /F2 14 Tf 0.18 0.48 0.3 rg 1 0 0 1 995.04 461 Tm (P7  Render + mux) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 1022.11 440 Tm (FFmpeg frames) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 1016.27 423 Tm (mix audio / MP4) Tj ET
+0.17 0.39 0.62 RG 1.8 w [] 0 d 201 423 m 257 423 l S [] 0 d
+0.17 0.39 0.62 rg 257 423 m 249.21 427.5 l 249.21 418.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 203 440 Tm (POST + JWT) Tj ET
+0.17 0.39 0.62 RG 1.8 w [] 0 d 436 423 m 492 423 l S [] 0 d
+0.17 0.39 0.62 rg 492 423 m 484.21 427.5 l 484.21 418.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 438 440 Tm (accepted payload) Tj ET
+0.17 0.39 0.62 RG 1.8 w [] 0 d 676 423 m 739 423 l S [] 0 d
+0.17 0.39 0.62 rg 739 423 m 731.21 427.5 l 731.21 418.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 677 440 Tm (speech segments) Tj ET
+0.17 0.39 0.62 RG 1.8 w [] 0 d 921 423 m 973 423 l S [] 0 d
+0.17 0.39 0.62 rg 973 423 m 965.21 427.5 l 965.21 418.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 921 440 Tm (WAV segments) Tj ET
+1 0.96 0.84 rg 0.62 0.43 0.08 RG 1.5 w
+47 226 m 47 247.54 84.83 265 131.5 265 c 178.17 265 216 247.54 216 226 c 216 204.46 178.17 187 131.5 187 c 84.83 187 47 204.46 47 226 c B
+BT /F2 12 Tf 0.62 0.43 0.08 rg 1 0 0 1 89.24 231 Tm (E1  Edge TTS) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 92.84 212 Tm (external network) Tj ET
+0.95 0.91 0.98 rg 0.43 0.29 0.57 RG 1.5 w
+292 178 m 458 178 l 464.63 178 470 183.37 470 190 c 470 262 l 470 268.63 464.63 274 458 274 c 292 274 l 285.37 274 280 268.63 280 262 c 280 190 l 280 183.37 285.37 178 292 178 c B
+BT /F2 14 Tf 0.43 0.29 0.57 rg 1 0 0 1 289.74 249 Tm (P8  FastAPI voice API) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 319.62 228 Tm (owner-scoped lookup) Tj ET
+BT /F1 11 Tf 0.1 0.16 0.23 rg 1 0 0 1 325.44 211 Tm (XTTS v2 inference) Tj ET
+0.96 0.97 0.98 rg 0.43 0.29 0.57 RG 1.5 w
+537 178 m 717 178 l 721.42 178 725 181.58 725 186 c 725 266 l 725 270.42 721.42 274 717 274 c 537 274 l 532.58 274 529 270.42 529 266 c 529 186 l 529 181.58 532.58 178 537 178 c B
+BT /F2 12 Tf 0.43 0.29 0.57 rg 1 0 0 1 567.84 237 Tm (D2  Voice catalog) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 567.38 217 Tm (voices.json + WAV samples) Tj ET
+1 0.96 0.84 rg 0.62 0.43 0.08 RG 1.5 w
+810 226 m 810 247.54 844.25 265 886.5 265 c 928.75 265 963 247.54 963 226 c 963 204.46 928.75 187 886.5 187 c 844.25 187 810 204.46 810 226 c B
+BT /F2 12 Tf 0.62 0.43 0.08 rg 1 0 0 1 851.2 231 Tm (E2  FFmpeg) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 857.38 212 Tm (local binary) Tj ET
+0.96 0.97 0.98 rg 0.43 0.29 0.57 RG 1.5 w
+1008 169 m 1139 169 l 1143.42 169 1147 172.58 1147 177 c 1147 273 l 1147 277.42 1143.42 281 1139 281 c 1008 281 l 1003.58 281 1000 277.42 1000 273 c 1000 177 l 1000 172.58 1003.58 169 1008 169 c B
+BT /F2 11 Tf 0.43 0.29 0.57 rg 1 0 0 1 1022.96 248 Tm (D3  Video assets) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 1052.54 228 Tm (MP4 + SRT) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 1042.99 211 Tm (metadata JSON) Tj ET
+BT /F1 9 Tf 0.1 0.16 0.23 rg 1 0 0 1 1038.22 194 Tm (temporary files) Tj ET
+0.62 0.43 0.08 RG 1.8 w [] 0 d 798 362 m 196 265 l S [] 0 d
+0.62 0.43 0.08 rg 196 265 m 204.41 261.8 l 202.98 270.68 l h f
+BT /F1 9 Tf 0.34 0.4 0.48 rg 1 0 0 1 477 309 Tm (Edge TTS request) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 798 362 m 375 274 l S [] 0 d
+0.43 0.29 0.57 rg 375 274 m 383.55 271.18 l 381.71 279.99 l h f
+BT /F1 9 Tf 0.34 0.4 0.48 rg 1 0 0 1 628 294 Tm (custom voice request) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 470 222 m 529 222 l S [] 0 d
+0.43 0.29 0.57 rg 529 222 m 521.21 226.5 l 521.21 217.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 473 238 Tm (profile lookup) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 529 197 m 470 197 l S [] 0 d
+0.43 0.29 0.57 rg 470 197 m 477.79 192.5 l 477.79 201.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 473 181 Tm (reference WAVs) Tj ET
+0.62 0.43 0.08 RG 1.8 w [] 0 d 973 400 m 963 226 l S [] 0 d
+0.62 0.43 0.08 rg 963 226 m 967.94 233.52 l 958.95 234.04 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 923 314 Tm (render + audio mux) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 1059 362 m 1072 281 l S [] 0 d
+0.43 0.29 0.57 rg 1072 281 m 1075.21 289.41 l 1066.32 287.98 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 1068 318 Tm (final files) Tj ET
+0.18 0.48 0.3 RG 1.8 w [] 0 d 343 362 m 343 328 l S [] 0 d
+0.18 0.48 0.3 rg 343 328 m 347.5 335.79 l 338.5 335.79 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 352 339 Tm (job status) Tj ET
+0.18 0.48 0.3 RG 1.8 w [] 0 d 343 328 m 132 328 l S [] 0 d
+0.18 0.48 0.3 rg 132 328 m 139.79 323.5 l 139.79 332.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 178 336 Tm (poll GET /api/jobs/:id) Tj ET
+0.43 0.29 0.57 RG 1.8 w [] 0 d 1000 197 m 922 197 l S [] 0 d
+0.43 0.29 0.57 rg 922 197 m 929.79 192.5 l 929.79 201.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 919 180 Tm (persist artifact paths) Tj ET
+0.43 0.29 0.57 RG 1.4 w [5 4] 0 d 1000 238 m 888 581 l S [] 0 d
+0.43 0.29 0.57 rg 888 581 m 886.14 572.19 l 894.7 574.99 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 876 531 Tm (save video record after success) Tj ET
+0.17 0.39 0.62 RG 1.2 w [5 4] 0 d 1074 169 m 113 604 l S [] 0 d
+0.17 0.39 0.62 rg 113 604 m 118.24 596.69 l 121.96 604.89 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 56 550 Tm (download MP4 / SRT / metadata) Tj ET
+BT /F1 10 Tf 0.1 0.16 0.23 rg 1 0 0 1 47 105 Tm (Legend:) Tj ET
+1 0.96 0.84 rg 0.62 0.43 0.08 RG 1.5 w
+112 104 m 112 107.87 117.37 111 124 111 c 130.63 111 136 107.87 136 104 c 136 100.13 130.63 97 124 97 c 117.37 97 112 100.13 112 104 c B
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 142 99 Tm (External actor/service) Tj ET
+0.89 0.94 0.99 rg 0.17 0.39 0.62 RG 1.5 w
+273 96 m 295 96 l 296.66 96 298 97.34 298 99 c 298 108 l 298 109.66 296.66 111 295 111 c 273 111 l 271.34 111 270 109.66 270 108 c 270 99 l 270 97.34 271.34 96 273 96 c B
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 306 99 Tm (Process) Tj ET
+0.96 0.97 0.98 rg 0.43 0.29 0.57 RG 1.5 w
+381 96 m 403 96 l 404.66 96 406 97.34 406 99 c 406 108 l 406 109.66 404.66 111 403 111 c 381 111 l 379.34 111 378 109.66 378 108 c 378 99 l 378 97.34 379.34 96 381 96 c B
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 414 99 Tm (Data store) Tj ET
+0.17 0.39 0.62 RG 1.2 w [] 0 d 518 103 m 552 103 l S [] 0 d
+0.17 0.39 0.62 rg 552 103 m 544.21 107.5 l 544.21 98.5 l h f
+BT /F1 8 Tf 0.34 0.4 0.48 rg 1 0 0 1 559 99 Tm (Data flow direction) Tj ET
+BT /F1 9 Tf 0.34 0.4 0.48 rg 1 0 0 1 47 77 Tm (Operational detail: POST /api/videos/generate returns HTTP 202; job progress is process-local and not durable across API restarts.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 1191 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000006775 00000 n 
+0000006912 00000 n 
+0000018722 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+18859
+%%EOF

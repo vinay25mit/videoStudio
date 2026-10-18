@@ -1,0 +1,11 @@
+node_modules
+.venv
+voice-service/.venv
+voice-service/data
+__pycache__/
+.env
+client/dist
+server/dist
+storage
+*.log
+.DS_Store

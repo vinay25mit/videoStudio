@@ -1,0 +1,224 @@
+{
+  "questions": [
+    {
+      "question": "Which nutrient is the main source of energy for the human body?",
+      "options": {
+        "A": "Proteins",
+        "B": "Carbohydrates",
+        "C": "Vitamins",
+        "D": "Minerals"
+      },
+      "correctAnswer": "B",
+      "explanation": "Carbohydrates are the primary source of energy for the human body."
+    },
+    {
+      "question": "Which nutrient is mainly required for growth and repair of body tissues?",
+      "options": {
+        "A": "Proteins",
+        "B": "Fats",
+        "C": "Vitamins",
+        "D": "Water"
+      },
+      "correctAnswer": "A",
+      "explanation": "Proteins are essential for growth, development, and repair of body tissues."
+    },
+    {
+      "question": "Which nutrient provides the highest amount of energy per gram?",
+      "options": {
+        "A": "Carbohydrates",
+        "B": "Proteins",
+        "C": "Fats",
+        "D": "Vitamins"
+      },
+      "correctAnswer": "C",
+      "explanation": "Fats provide about 9 kcal of energy per gram, while carbohydrates and proteins provide about 4 kcal per gram."
+    },
+    {
+      "question": "Which vitamin is essential for normal vision, especially in dim light?",
+      "options": {
+        "A": "Vitamin A",
+        "B": "Vitamin B1",
+        "C": "Vitamin C",
+        "D": "Vitamin K"
+      },
+      "correctAnswer": "A",
+      "explanation": "Vitamin A is important for maintaining normal vision. Its deficiency can cause night blindness."
+    },
+    {
+      "question": "Deficiency of Vitamin C causes which disease?",
+      "options": {
+        "A": "Rickets",
+        "B": "Scurvy",
+        "C": "Beriberi",
+        "D": "Pellagra"
+      },
+      "correctAnswer": "B",
+      "explanation": "Vitamin C deficiency causes scurvy, which may result in bleeding gums and poor wound healing."
+    },
+    {
+      "question": "Deficiency of Vitamin D in children can cause which disease?",
+      "options": {
+        "A": "Scurvy",
+        "B": "Rickets",
+        "C": "Beriberi",
+        "D": "Anaemia"
+      },
+      "correctAnswer": "B",
+      "explanation": "Vitamin D deficiency in children can cause rickets, a condition affecting normal bone development."
+    },
+    {
+      "question": "Which vitamin is important for blood clotting?",
+      "options": {
+        "A": "Vitamin A",
+        "B": "Vitamin C",
+        "C": "Vitamin D",
+        "D": "Vitamin K"
+      },
+      "correctAnswer": "D",
+      "explanation": "Vitamin K plays an important role in the formation of proteins required for blood clotting."
+    },
+    {
+      "question": "Which mineral is essential for the formation of haemoglobin?",
+      "options": {
+        "A": "Calcium",
+        "B": "Iron",
+        "C": "Sodium",
+        "D": "Iodine"
+      },
+      "correctAnswer": "B",
+      "explanation": "Iron is an essential component of haemoglobin, the protein that carries oxygen in red blood cells."
+    },
+    {
+      "question": "Deficiency of iodine can lead to which disease?",
+      "options": {
+        "A": "Goitre",
+        "B": "Scurvy",
+        "C": "Rickets",
+        "D": "Beriberi"
+      },
+      "correctAnswer": "A",
+      "explanation": "Iodine deficiency can cause enlargement of the thyroid gland, known as goitre."
+    },
+    {
+      "question": "Which mineral is mainly required for strong bones and teeth?",
+      "options": {
+        "A": "Iron",
+        "B": "Calcium",
+        "C": "Iodine",
+        "D": "Sodium"
+      },
+      "correctAnswer": "B",
+      "explanation": "Calcium is an important mineral required for the development and maintenance of strong bones and teeth."
+    },
+    {
+      "question": "Which vitamin is also known as ascorbic acid?",
+      "options": {
+        "A": "Vitamin A",
+        "B": "Vitamin B12",
+        "C": "Vitamin C",
+        "D": "Vitamin D"
+      },
+      "correctAnswer": "C",
+      "explanation": "Vitamin C is chemically known as ascorbic acid."
+    },
+    {
+      "question": "Which vitamin is commonly known as the sunshine vitamin?",
+      "options": {
+        "A": "Vitamin A",
+        "B": "Vitamin B6",
+        "C": "Vitamin C",
+        "D": "Vitamin D"
+      },
+      "correctAnswer": "D",
+      "explanation": "Vitamin D is called the sunshine vitamin because sunlight helps the body produce it in the skin."
+    },
+    {
+      "question": "Which disease is caused by a deficiency of Vitamin B1?",
+      "options": {
+        "A": "Beriberi",
+        "B": "Scurvy",
+        "C": "Rickets",
+        "D": "Night blindness"
+      },
+      "correctAnswer": "A",
+      "explanation": "Severe deficiency of Vitamin B1, or thiamine, can cause beriberi."
+    },
+    {
+      "question": "Which nutrient helps in maintaining body temperature and transporting nutrients?",
+      "options": {
+        "A": "Water",
+        "B": "Fats",
+        "C": "Proteins",
+        "D": "Carbohydrates"
+      },
+      "correctAnswer": "A",
+      "explanation": "Water helps regulate body temperature and is essential for transporting nutrients and removing waste."
+    },
+    {
+      "question": "Which of the following is a water-soluble vitamin?",
+      "options": {
+        "A": "Vitamin A",
+        "B": "Vitamin D",
+        "C": "Vitamin C",
+        "D": "Vitamin K"
+      },
+      "correctAnswer": "C",
+      "explanation": "Vitamin C is a water-soluble vitamin. Vitamins B-complex are also water-soluble."
+    },
+    {
+      "question": "Which of the following vitamins is fat-soluble?",
+      "options": {
+        "A": "Vitamin C",
+        "B": "Vitamin B1",
+        "C": "Vitamin B12",
+        "D": "Vitamin A"
+      },
+      "correctAnswer": "D",
+      "explanation": "Vitamin A is a fat-soluble vitamin. Vitamins D, E, and K are also fat-soluble."
+    },
+    {
+      "question": "Which nutrient is necessary for proper digestion and prevention of constipation?",
+      "options": {
+        "A": "Dietary fibre",
+        "B": "Protein",
+        "C": "Fat",
+        "D": "Vitamin D"
+      },
+      "correctAnswer": "A",
+      "explanation": "Dietary fibre adds bulk to food and helps promote normal bowel movement, reducing the risk of constipation."
+    },
+    {
+      "question": "Which food is generally considered a rich source of protein?",
+      "options": {
+        "A": "Rice",
+        "B": "Pulses",
+        "C": "Sugar",
+        "D": "Butter"
+      },
+      "correctAnswer": "B",
+      "explanation": "Pulses such as lentils, chickpeas, and beans are important plant sources of protein."
+    },
+    {
+      "question": "Which nutrient is required in small amounts for various body functions but does not directly provide energy?",
+      "options": {
+        "A": "Vitamins",
+        "B": "Carbohydrates",
+        "C": "Fats",
+        "D": "Proteins"
+      },
+      "correctAnswer": "A",
+      "explanation": "Vitamins are micronutrients required in small amounts to support various metabolic and physiological functions and do not directly provide energy."
+    },
+    {
+      "question": "A balanced diet should contain which of the following?",
+      "options": {
+        "A": "Only carbohydrates and fats",
+        "B": "Only proteins and vitamins",
+        "C": "All essential nutrients in appropriate amounts",
+        "D": "Only fruits and vegetables"
+      },
+      "correctAnswer": "C",
+      "explanation": "A balanced diet provides carbohydrates, proteins, fats, vitamins, minerals, fibre, and water in appropriate proportions."
+    }
+  ]
+}
