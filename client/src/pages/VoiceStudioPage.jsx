@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { buildCurriculumScript, voiceCurriculum } from '../data/voiceCurriculum.js';
+import Icon from '../components/Icon';
 
 const defaultVoiceId = 'edge:default';
 
@@ -330,7 +331,7 @@ export default function VoiceStudioPage() {
       <header className="page-header">
         <div>
           <p className="eyebrow">Voice Studio</p>
-          <h1>Voice Library</h1>
+          <h1 className="page-title"><Icon name="microphone" size={23} />Voice Library</h1>
         </div>
         <div className="voice-count">{customVoices.length} custom {customVoices.length === 1 ? 'voice' : 'voices'}</div>
       </header>
@@ -346,7 +347,7 @@ export default function VoiceStudioPage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Ready to use</p>
-            <h2>Built-in voices</h2>
+            <h2 className="icon-heading"><Icon name="microphone" />Built-in voices</h2>
           </div>
         </div>
         <div className="voice-grid">
@@ -358,6 +359,7 @@ export default function VoiceStudioPage() {
                 <p>{activeVoiceId === voice.id ? 'Selected for video narration' : 'Available for video narration'}</p>
               </div>
               <button type="button" className={activeVoiceId === voice.id ? 'secondary-btn' : 'outline-btn'} onClick={() => handleSelectVoice(voice.id)}>
+                <Icon name="microphone" size={16} />
                 {activeVoiceId === voice.id ? 'Selected' : 'Use voice'}
               </button>
             </article>
@@ -369,7 +371,7 @@ export default function VoiceStudioPage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Your profiles</p>
-            <h2>Custom voices</h2>
+            <h2 className="icon-heading"><Icon name="microphone" />Custom voices</h2>
           </div>
         </div>
         {loading ? <p className="list-subtitle">Loading voices...</p> : customVoices.length ? (
@@ -384,9 +386,11 @@ export default function VoiceStudioPage() {
                 </div>
                 <div className="voice-profile-actions">
                   <button type="button" className={activeVoiceId === voice.id ? 'secondary-btn' : 'outline-btn'} onClick={() => handleSelectVoice(voice.id)}>
+                    <Icon name="microphone" size={16} />
                     {activeVoiceId === voice.id ? 'Selected' : 'Use voice'}
                   </button>
                   <button type="button" className="danger-btn" disabled={deletingVoiceId === voice.id.slice('custom:'.length)} onClick={() => handleDeleteVoice(voice)}>
+                    <Icon name="trash" size={16} />
                     {deletingVoiceId === voice.id.slice('custom:'.length) ? 'Deleting...' : 'Delete'}
                   </button>
                 </div>
@@ -400,7 +404,7 @@ export default function VoiceStudioPage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Add a profile</p>
-            <h2>Create a custom voice</h2>
+            <h2 className="icon-heading"><Icon name="plus" />Create a custom voice</h2>
           </div>
         </div>
         <form className="voice-create-form" onSubmit={handleCreateVoice}>
@@ -429,6 +433,7 @@ export default function VoiceStudioPage() {
           </div>
           <div className="recording-row">
             <button type="button" className={recording && recordingTarget === 'profile' ? 'danger-btn' : 'outline-btn'} onClick={() => handleRecording('profile')} disabled={recording && recordingTarget !== 'profile'}>
+              <Icon name="microphone" size={16} />
               {recording && recordingTarget === 'profile' ? 'Stop recording' : 'Record with microphone'}
             </button>
             <span className="list-subtitle">{sample ? `${sample.name} ready` : 'Use a quiet 10-30 second sample.'}</span>
@@ -438,6 +443,7 @@ export default function VoiceStudioPage() {
             I own this voice or have permission to use it.
           </label>
           <button className="primary-btn" type="submit" disabled={saving || recording || !voiceName.trim() || !sample || !consent}>
+            <Icon name="save" size={17} />
             {saving ? 'Creating profile...' : 'Create voice profile'}
           </button>
           <p className="voice-note">Start with a reference sample, then add prompted recordings for each language and subject section below.</p>
@@ -448,7 +454,7 @@ export default function VoiceStudioPage() {
         <div className="section-heading">
           <div>
             <p className="eyebrow">Voice dataset</p>
-            <h2>Record the subject curriculum</h2>
+            <h2 className="icon-heading"><Icon name="book" />Record the subject curriculum</h2>
           </div>
         </div>
         {customVoices.length ? (
@@ -531,6 +537,7 @@ export default function VoiceStudioPage() {
             </div>
             <div className="recording-row">
               <button type="button" className={recording && recordingTarget === 'section' ? 'danger-btn' : 'outline-btn'} onClick={() => handleRecording('section')} disabled={recording && recordingTarget !== 'section'}>
+                <Icon name="microphone" size={16} />
                 {recording && recordingTarget === 'section' ? 'Stop section recording' : 'Record this section'}
               </button>
               <span className="list-subtitle">{sectionSample ? `${sectionSample.name} ready` : 'WAV, maximum 25 MB'}</span>
@@ -540,6 +547,7 @@ export default function VoiceStudioPage() {
               I own this voice or have permission to use it.
             </label>
             <button className="primary-btn" type="submit" disabled={savingSection || recording}>
+              <Icon name="save" size={17} />
               {savingSection ? 'Saving recording...' : 'Save section recording'}
             </button>
             <p className="voice-note">Record both languages across subjects for stronger reference coverage. These clips are used for voice conditioning; true model fine-tuning is not included in this service yet.</p>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Icon from '../components/Icon';
 
 const demoQuestions = [
   {
@@ -37,6 +38,9 @@ const defaultForm = {
   title: 'BPSC Current Affairs MCQ',
   questionCount: 2,
 };
+
+const newestFirst = (items) => [...items].sort((first, second) =>
+  (Date.parse(second.createdAt || '') || 0) - (Date.parse(first.createdAt || '') || 0));
 
 export default function PresentationsPage() {
   const [form, setForm] = useState({ ...defaultForm, mode: 'mcq', explanationLanguage: 'english' });
@@ -108,7 +112,7 @@ export default function PresentationsPage() {
       .then((response) => response.json())
       .then((payload) => {
         if (payload?.success && Array.isArray(payload.data)) {
-          setPresentations(payload.data);
+          setPresentations(newestFirst(payload.data));
         }
       })
       .catch(() => {});
@@ -145,10 +149,10 @@ export default function PresentationsPage() {
         const payload = await response.json();
         if (!response.ok) throw new Error(payload?.error?.message || 'Presentation generation failed.');
         if (payload?.success && payload?.data) {
-          setPresentations((current) => [payload.data, ...current]);
+          setPresentations((current) => newestFirst([payload.data, ...current]));
         }
       } else {
-        setPresentations((current) => [
+        setPresentations((current) => newestFirst([
           {
             id: `ppt-${Date.now()}`,
             title: form.title.trim(),
@@ -157,7 +161,7 @@ export default function PresentationsPage() {
             createdAt: new Date().toISOString(),
           },
           ...current,
-        ]);
+        ]));
       }
     } catch (err) {
       setError(err.message || 'Presentation generation failed.');
@@ -171,13 +175,13 @@ export default function PresentationsPage() {
       <header className="page-header">
         <div>
           <p className="eyebrow">Presentations</p>
-          <h1>Generate PPT</h1>
+          <h1 className="page-title"><Icon name="presentation" size={23} />Generate PPT</h1>
         </div>
       </header>
 
       <div className="two-column-layout">
         <form className="card" onSubmit={handleGenerate}>
-          <h3>Create Presentation</h3>
+          <h3 className="icon-heading"><Icon name="plus" />Create Presentation</h3>
 
           <label className="field">
             <span>Presentation Type</span>
@@ -238,12 +242,13 @@ export default function PresentationsPage() {
           </div></>}
 
           <button className="primary-btn" type="submit" disabled={loading}>
+            <Icon name="sparkles" size={17} />
             {loading ? 'Generating...' : 'Generate PPT'}
           </button>
         </form>
 
         <div className="card">
-          <h3>Recent Presentations</h3>
+          <h3 className="icon-heading"><Icon name="presentation" />Recent Presentations</h3>
 
           {presentations.length === 0 ? (
             <div className="empty-state">
@@ -266,6 +271,7 @@ export default function PresentationsPage() {
                         className="download-btn"
                         onClick={() => downloadAsset(`/api/presentations/${presentation.id}/download`, presentation.fileName || 'presentation.pptx')}
                       >
+                        <Icon name="download" size={16} />
                         Download PPT
                       </button>
                     )}

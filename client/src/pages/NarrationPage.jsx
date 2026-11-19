@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Icon from '../components/Icon';
 
 const demoQuestions = [
   {
@@ -104,7 +105,7 @@ export default function NarrationPage() {
       <header className="page-header">
         <div>
           <p className="eyebrow">Narration</p>
-          <h1>Voiceover Script</h1>
+          <h1 className="page-title"><Icon name="narration" size={23} />Voiceover Script</h1>
         </div>
       </header>
 
@@ -129,22 +130,25 @@ export default function NarrationPage() {
 
           <div className="inline-row">
             <button className="primary-btn" onClick={handleGenerate} disabled={loading}>
+              <Icon name="sparkles" size={17} />
               {loading ? 'Generating...' : 'Generate Script'}
             </button>
             <button className="secondary-btn" onClick={handleSpeak} type="button" disabled={!script}>
+              <Icon name="play" size={16} />
               Play Voice
             </button>
           </div>
 
           {srt && (
             <button className="secondary-btn" onClick={handleDownloadSrt} type="button" style={{ marginTop: '12px' }}>
+              <Icon name="download" size={16} />
               Download SRT
             </button>
           )}
         </div>
 
         <div className="card">
-          <h3>Generated narration</h3>
+          <h3 className="icon-heading"><Icon name="narration" />Generated narration</h3>
           {script ? (
             <div className="script-box">{script}</div>
           ) : (

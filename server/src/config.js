@@ -19,4 +19,5 @@ export const config = {
   voiceServiceDirectory: path.resolve(repositoryRoot, 'voice-service'),
   voiceStorageDirectory: path.join(storageDirectory, 'voice-profiles'),
   voiceServicePython: process.env.VOICE_SERVICE_PYTHON || '',
+  jamendoClientId: process.env.JAMENDO_CLIENT_ID || '',
 };

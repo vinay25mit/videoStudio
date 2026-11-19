@@ -36,6 +36,7 @@ export function normalizeQuestionImport(payload) {
       explanation: normalizeText(record.explanation ?? ''),
       hindiExplanation: normalizeText(record.hindiExplanation ?? ''),
       hinglishExplanation: normalizeText(record.hinglishExplanation ?? ''),
+      keyDetails: normalizeDetails(record.keyDetails ?? record.keyPoints ?? record.shortDetails ?? record.importantPoints ?? record.details),
     };
 
     if (!normalized.question || !normalized.optionA || !normalized.optionB || !normalized.optionC || !normalized.optionD || !/^[ABCD]$/.test(normalized.correctAnswer)) {
@@ -44,4 +45,9 @@ export function normalizeQuestionImport(payload) {
 
     return normalized;
   });
+}
+
+function normalizeDetails(value) {
+  const items = Array.isArray(value) ? value : value == null ? [] : [value];
+  return items.map((item) => normalizeText(item)).filter(Boolean);
 }

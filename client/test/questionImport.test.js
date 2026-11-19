@@ -30,6 +30,27 @@ test('loads every question from a wrapped keyed object', () => {
   assert.equal(questions.length, 2);
 });
 
+test('accepts the syllabus MCQ JSON format with a title and questions array', () => {
+  const questions = normalizeQuestionImport({
+    title: 'Current Affairs Practice',
+    questions: [{
+      question: 'Where was the programme inaugurated?',
+      options: { A: 'Kolkata', B: 'Mumbai', C: 'Bengaluru', D: 'New Delhi' },
+      correctAnswer: 'D',
+      explanation: 'It was inaugurated in New Delhi.',
+      hindiExplanation: 'इसका उद्घाटन नई दिल्ली में हुआ।',
+      hinglishExplanation: 'Iska inauguration New Delhi mein hua.',
+    }],
+  });
+
+  assert.equal(questions.length, 1);
+  assert.equal(questions[0].optionD, 'New Delhi');
+  assert.equal(questions[0].correctAnswer, 'D');
+  assert.equal(questions[0].explanation, 'It was inaugurated in New Delhi.');
+  assert.equal(questions[0].hindiExplanation, 'इसका उद्घाटन नई दिल्ली में हुआ।');
+  assert.equal(questions[0].hinglishExplanation, 'Iska inauguration New Delhi mein hua.');
+});
+
 test('normalizes Unicode dashes and punctuation before rendering', () => {
   const questions = normalizeQuestionImport([
     {
