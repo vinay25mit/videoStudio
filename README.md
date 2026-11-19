@@ -83,9 +83,11 @@ The separate `voice-service/` uses XTTS v2 to clone narration from microphone re
 
 ## Docker
 
-```bash
-docker compose up --build
-```
+Docker is not configured yet: this repository does not include a `Dockerfile` or a Compose file, so `docker compose up --build` will not start the app.
+
+For local development, use the Node.js setup above. Install dependencies with `npm install`, create `.env` from `.env.example`, then run `npm run dev`. This starts the frontend at `http://localhost:5173` and the API at `http://localhost:5000`.
+
+The optional XTTS voice service has its own Python environment and setup instructions in [`voice-service/README.md`](./voice-service/README.md); it is not included in a Docker setup.
 
 ## Notes
 
