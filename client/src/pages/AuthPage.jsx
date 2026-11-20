@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Icon from '../components/Icon';
 
 const initialForm = {
   name: '',
@@ -53,13 +54,14 @@ export default function AuthPage() {
     <div className="auth-page">
       <div className="auth-card">
         <div className="auth-header">
-          <div className="brand small">MCQ Studio</div>
+          <div className="brand small"><Icon name="sparkles" size={23} />MCQ Studio</div>
           <div className="toggle-row">
             <button
               type="button"
               className={mode === 'login' ? 'toggle active' : 'toggle'}
               onClick={() => setMode('login')}
             >
+              <Icon name="questions" size={16} />
               Login
             </button>
             <button
@@ -67,6 +69,7 @@ export default function AuthPage() {
               className={mode === 'register' ? 'toggle active' : 'toggle'}
               onClick={() => setMode('register')}
             >
+              <Icon name="plus" size={16} />
               Register
             </button>
           </div>
@@ -93,6 +96,7 @@ export default function AuthPage() {
           {error && <div className="error-box">{error}</div>}
 
           <button type="submit" className="primary-btn auth-submit" disabled={loading}>
+            <Icon name={mode === 'login' ? 'login' : 'save'} size={17} />
             {loading ? 'Please wait...' : mode === 'login' ? 'Login' : 'Create Account'}
           </button>
         </form>

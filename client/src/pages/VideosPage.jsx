@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { normalizeQuestionImport } from '../lib/questionImport.js';
+import Icon from '../components/Icon';
 
 const defaultForm = {
   title: 'Daily Current Affairs Video',
@@ -239,13 +240,13 @@ export default function VideosPage() {
       <header className="page-header">
         <div>
           <p className="eyebrow">Videos</p>
-          <h1>Generate Video</h1>
+          <h1 className="page-title"><Icon name="video" size={23} />Generate Video</h1>
         </div>
       </header>
 
       <div className="two-column-layout">
         <form className="card" onSubmit={handleGenerate}>
-          <h3>Create Video</h3>
+          <h3 className="icon-heading"><Icon name="plus" />Create Video</h3>
 
           <label className="field">
             <span>Video Title</span>
@@ -325,12 +326,13 @@ export default function VideosPage() {
           )}
 
           <button className="primary-btn" type="submit" disabled={loading}>
+            <Icon name="sparkles" size={17} />
             {loading ? 'Generating...' : 'Generate Video'}
           </button>
         </form>
 
         <div className="card">
-          <h3>Recent Videos</h3>
+          <h3 className="icon-heading"><Icon name="video" />Recent Videos</h3>
 
           {videos.length === 0 ? (
             <div className="empty-state">
@@ -344,6 +346,9 @@ export default function VideosPage() {
                   <div>
                     <div className="list-title">{video.title}</div>
                     <div className="list-subtitle">{video.fileName || 'Generated video'}</div>
+                    {video.presentationId && (
+                      <div className="list-subtitle">Matching MCQ PPT ready: {video.presentationFileName}</div>
+                    )}
                   </div>
                   <div className="presentation-actions">
                     <div className="list-meta">{video.questionCount || 0} Qs • {video.duration || 0}s</div>
@@ -353,8 +358,12 @@ export default function VideosPage() {
                         className="download-btn"
                         onClick={() => downloadAsset(`/api/videos/${video.id}/download`, video.fileName || 'video.mp4')}
                       >
+                        <Icon name="download" size={16} />
                         Download MP4
                       </button>
+                    )}
+                    {video.presentationId && (
+                      <Link className="secondary-btn" to="/presentations">Open PPT section</Link>
                     )}
                     {video.subtitleFilePath && (
                       <button
@@ -362,6 +371,7 @@ export default function VideosPage() {
                         className="secondary-btn"
                         onClick={() => downloadAsset(`/api/videos/${video.id}/download-srt`, video.subtitleFileName || 'video.srt')}
                       >
+                        <Icon name="download" size={16} />
                         Download SRT
                       </button>
                     )}
@@ -371,6 +381,7 @@ export default function VideosPage() {
                         className="secondary-btn"
                         onClick={() => downloadAsset(`/api/videos/${video.id}/download-metadata`, video.metadataFileName || 'video-metadata.json')}
                       >
+                        <Icon name="download" size={16} />
                         YouTube Metadata
                       </button>
                     )}
@@ -380,6 +391,7 @@ export default function VideosPage() {
                       onClick={() => handleDeleteVideo(video)}
                       disabled={deletingVideoId === video.id}
                     >
+                      <Icon name="trash" size={16} />
                       {deletingVideoId === video.id ? 'Deleting...' : 'Delete Video'}
                     </button>
                   </div>

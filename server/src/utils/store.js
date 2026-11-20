@@ -21,6 +21,8 @@ export function readStore() {
       sets: [],
       presentations: [],
       videos: [],
+      syllabusTrackers: [],
+      currentAffairs: [],
     };
     fs.writeFileSync(dataFile, JSON.stringify(initial, null, 2));
     return initial;
@@ -28,7 +30,7 @@ export function readStore() {
 
   const raw = fs.readFileSync(dataFile, 'utf8');
   if (!raw.trim()) {
-    const initial = { users: [], questions: [], sets: [], presentations: [], videos: [] };
+    const initial = { users: [], questions: [], sets: [], presentations: [], videos: [], syllabusTrackers: [], currentAffairs: [] };
     fs.writeFileSync(dataFile, JSON.stringify(initial, null, 2));
     return initial;
   }
@@ -40,6 +42,8 @@ export function readStore() {
     sets: Array.isArray(parsed.sets) ? parsed.sets : [],
     presentations: Array.isArray(parsed.presentations) ? parsed.presentations : [],
     videos: Array.isArray(parsed.videos) ? parsed.videos : [],
+    syllabusTrackers: Array.isArray(parsed.syllabusTrackers) ? parsed.syllabusTrackers : [],
+    currentAffairs: Array.isArray(parsed.currentAffairs) ? parsed.currentAffairs : [],
   };
 }
 

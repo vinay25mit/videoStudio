@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import Icon from '../components/Icon';
 
 const demoQuestions = [
   { id: 'q-1', question: 'Which country hosted the meeting?', correctAnswer: 'B' },
@@ -91,13 +92,13 @@ export default function SetsPage() {
       <header className="page-header">
         <div>
           <p className="eyebrow">Question Sets</p>
-          <h1>All Sets</h1>
+          <h1 className="page-title"><Icon name="sets" size={23} />All Sets</h1>
         </div>
       </header>
 
       <div className="two-column-layout">
         <form className="card" onSubmit={handleCreateSet}>
-          <h3>Create Set</h3>
+          <h3 className="icon-heading"><Icon name="plus" />Create Set</h3>
 
           <label className="field">
             <span>Set Name</span>
@@ -136,12 +137,13 @@ export default function SetsPage() {
           </div>
 
           <button className="primary-btn" type="submit" disabled={loading || !form.name.trim()}>
+            <Icon name="plus" size={17} />
             {loading ? 'Saving...' : 'Create Set'}
           </button>
         </form>
 
         <div className="card">
-          <h3>Existing Sets</h3>
+          <h3 className="icon-heading"><Icon name="sets" />Existing Sets</h3>
           <div className="stack-list">
             {sets.map((set) => (
               <div key={set.id} className="list-item">

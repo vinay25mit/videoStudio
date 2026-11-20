@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Icon from '../components/Icon';
 
 const initialForm = {
   question: '',
@@ -110,13 +111,13 @@ export default function QuestionsPage() {
       <header className="page-header">
         <div>
           <p className="eyebrow">Question Bank</p>
-          <h1>All Questions</h1>
+          <h1 className="page-title"><Icon name="questions" size={23} />All Questions</h1>
         </div>
       </header>
 
       <div className="two-column-layout">
         <form className="card" onSubmit={handleSubmit}>
-          <h3>Add Question</h3>
+          <h3 className="icon-heading"><Icon name="plus" />Add Question</h3>
 
           <label className="field">
             <span>Question</span>
@@ -175,12 +176,13 @@ export default function QuestionsPage() {
           </label>
 
           <button className="primary-btn" type="submit" disabled={loading}>
+            <Icon name="save" size={17} />
             {loading ? 'Saving...' : 'Save Question'}
           </button>
         </form>
 
         <div className="card table-card">
-          <h3>Question List</h3>
+          <h3 className="icon-heading"><Icon name="questions" />Question List</h3>
           <table>
             <thead>
               <tr>
